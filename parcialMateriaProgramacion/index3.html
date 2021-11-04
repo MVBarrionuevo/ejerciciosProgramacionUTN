@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CableTV-RECLAMOS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="display-4 home">CABLE-TV</h1>
+          <p class="lead homeSub">
+            REALIZA TU RECLAMO...
+          </p>
+          <a class="btn btn-primary btn-lg" href="index2.html" role="button"
+            >Conocé los PLANES</a
+          >
+          <a class="btn btn-primary btn-lg" href="index.html" role="button"
+            >Volver a inicio</a
+          >
+        </div>
+      </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <form>
+              <div class="form-group">
+                <label>Número de Cliente:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtNumCliente"
+                  aria-describedby="numeroClienteAyuda"
+                  required
+                />
+                <small id="numeroClienteAyuda" class="form-text text-muted"
+                  >Ingrese el número de cliente</small
+                >
+              </div>
+  
+              <div class="form-group">
+                <label>Dirección de correo:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtCorreo"
+                  aria-describedby="correoAyuda"
+                  required
+                />
+                <small id="correoAyuda" class="form-text text-muted"
+                  >Ingrese el correo electrónico.</small
+                >
+              </div>
+              <div class="form-group">
+                <label>Elija su código de plan: </label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="planes" id="gridRadios1" value="opcion1" >
+                    <label class="form-check-label" for="gridRadios1">
+                    Plan 1
+                    </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="planes" id="gridRadios2" value="opcion2">
+                <label class="form-check-label" for="gridRadios2">
+                  Plan 2
+                </label>
+                </div>
+                <div class="form-check ">
+                <input class="form-check-input" type="radio" name="planes" id="gridRadios3" value="opcion3">
+                <label class="form-check-label" for="gridRadios3">
+                  Plan 3
+                </label>
+                </div>
+                <div class="form-check ">
+                <input class="form-check-input" type="radio" name="planes" id="gridRadios4" value="opcion4">
+                <label class="form-check-label" for="gridRadios4">
+                  Plan 4
+                </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="reclamo">Tipo de Reclamo</label>
+                <select id="reclamo" class="form-control">
+                  <option value= "corte">Corte del servicio</option>
+                  <option value= "corte">Imagen deficiente</option>
+                  <option value= "corte">Error de facturación</option>
+                  <option value= "corte">Otros</option>
+                  
+                </select>
+              </div>
+  
+
+              
+              <input
+                type="submit"
+                class="btn btn-primary"
+                value="ENVIAR"
+                onclick="enviar();"
+              />
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
